@@ -11,6 +11,11 @@
 body {
     overflow-x: hidden;
     font-family: 'Nunito', 'Open Sans', sans-serif;
+
+    background: linear-gradient(to bottom right, rgb(150, 150, 255, 0.3), rgb(150, 150, 255, 0.3)), url('logo-smkti.png') no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: auto 80%;
 }
 
 
@@ -21,10 +26,6 @@ body {
     padding: 100px 0 50px;
     min-width: 100%;
     min-height: 100vh;
-
-    background: linear-gradient(to bottom right, rgb(150, 150, 255, 0.3), rgb(150, 150, 255, 0.3)), url('logo-smkti.png') no-repeat;
-    background-position: center;
-    background-attachment: fixed;
 }
 
 
@@ -97,18 +98,14 @@ footer {
 }
 
 @media (max-width: 768px){
-    .container {
-        background-size: auto 80%;
-    }
     .card {
-        /* width: 200px; */
         font-size: 18px;
     }
 }
 
 @media (max-width: 480px){
-    .container {
-        background-size: auto 70%;
+    body {
+        background-size: auto 60%;
     }
     .card {
         width: 150px;
